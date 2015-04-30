@@ -1,8 +1,6 @@
-# go-cloudatcost
+# Project Name
 
-go-cloudatcost is a Go client library for accessing the [cloudatcost API](https://github.com/cloudatcost/api).
-
-go-cloudatcost was heavily inspired by the go-github library.
+TODO: Write a project description
 
 **travis-ci:** [![Build Status](https://travis-ci.org/masayukioguni/go-cloudatcost.svg?branch=master)](https://travis-ci.org/masayukioguni/go-cloudatcost)
 
@@ -12,47 +10,37 @@ go-cloudatcost was heavily inspired by the go-github library.
 
 **GoDoc:** [![GoDoc](https://godoc.org/github.com/masayukioguni/go-cloudatcost/cloudatcost?status.svg)](https://godoc.org/github.com/masayukioguni/go-cloudatcost/cloudatcost)
 
-API Version: `v1`
-
 ## References
-https://github.com/cloudatcost/api
+
 
 ## Installation
 ```bash
-$ go get github.com/masayukioguni/go-cloudatcost/cloudatcost
+$ go get github.com/masayukioguni/
 ```
 
-## Example
+## Installation
 
-```go
-package main
+TODO: Describe the installation process
 
-import (
-  "fmt"
-  "github.com/masayukioguni/go-cloudatcost/cloudatcost"
-  "os"
-)
+## Usage
 
-func main() {
-  Login := os.Getenv("CLOUDATCOST_API_LOGIN")
-  Key := os.Getenv("CLOUDATCOST_API_KEY")
+TODO: Write usage instructions
 
-  // Initializes a new CloudAtCost client
-  client, _ := cloudatcost.NewClient(&cloudatcost.Option{Login: Login, Key: Key})
+## Contributing
 
-  listservers, hr, err := client.ServersService.List()
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
 
-  if err != nil {
-    fmt.Printf("error: %v\n\n", err)
-    return
-  }
+## History
 
-  if hr.StatusCode != 200 {
-    fmt.Printf("http response error: %+v %+v \n\n", hr, err)
-    return
-  }
+TODO: Write history
 
-  fmt.Printf("%v,%v\n", listservers, err)
+## Credits
 
-}
-```
+TODO: Write credits
+
+## License
+MIT

@@ -16,4 +16,4 @@ matrix:
     - go: release
 
 script:
- - go test -v ./cloudatcost
+ - go test -v ./...
